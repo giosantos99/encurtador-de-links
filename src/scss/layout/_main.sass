@@ -1,0 +1,32 @@
+@import '../variables'
+
+header
+  background-image: url('/assets/background-home.jpg')
+  background-color: $secondary
+  background-repeat: no-repeat
+  background-position: center center
+  background-size: cover
+  height: 100vh
+  flex-direction: column
+
+  form
+    .form-control, .form-control:focus
+      background: transparent
+      caret-color: $grey
+      color: $grey
+      position: relative
+      z-index: 1 !important
+
+    .form-control::placeholder
+      color: $warning
+      padding-left: 4px
+
+    .input-group .btn-clear
+      cursor: pointer
+      position: absolute
+      right: 0
+      top: 5px
+      z-index: 2 !important
+      padding: 0 4px
+      background: $warning
+      color: $grey

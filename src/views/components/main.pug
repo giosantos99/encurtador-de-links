@@ -1,0 +1,41 @@
+header(class="d-flex align-items-center justify-content-center px-2")
+
+  div(class="container-alert")
+
+  div(class="text-center text-white pb-5")
+    div(class="fs-1 fw-bold pb-2") Encurte seus links.
+    div Links são longos. Encurte os links que você deseja compartilhar, e acompanhe enquanto viajam através da internet.
+
+  form(
+    action="/"
+    method="post"
+    class="w-100 flex-nowrap d-flex justify-content-center gap-3"
+  )
+    div(class="col-md-5")
+      div(class="input-group")
+        input(
+          name="url"
+          id="url"
+          type="url"
+          value=url
+          required
+          placeholder="Cole o seu link aqui"
+          aria-label="Cole o seu link aqui"
+          aria-describedby="Botão de limpar campo"
+          class="form-control border-0 border-bottom rounded-0 border-warning"
+        )
+        button(
+          class="btn btn-clear rounded-pill"
+          type="button"
+          id="clear"
+        )
+          i(class="bi bi-x text-white")
+
+    button(
+      class="button btn btn-warning text-light fw-semibold col-md-2"
+      id='actionBtn'
+      type='button'
+      data-action=encurtar ? 'copiar' : 'encurtar'
+    )
+      = encurtar ? 'COPIAR' : 'ENCURTAR'
+

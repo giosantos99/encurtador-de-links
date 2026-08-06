@@ -1,0 +1,10 @@
+section(class="section d-flex align-items-center py-4")
+  div(class="teste text-primary fs-1 pb-2") TOP 5
+
+  div(class="container-list")
+    if urls.length
+      each url in urls
+        ul(class="list list-group list-group-flush" style="background: red !important")
+          li(class="list-group-item d-flex justify-content-between")
+            div(class="text-primary fw-bold text-truncate") #{ url.shortUrl || '' }
+            div(class="text-secondary-emphasis") #{ url.hitsFormatado || 0}
