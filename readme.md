@@ -6,6 +6,8 @@ Aplicação web desenvolvida com **Node.js, Express, Pug, Sass e Bootstrap** par
 
 ![Preview da aplicação](docs/preview.png)
 
+🌐 **Acesse a aplicação:** [Encurtador de Links](https://app-encurtador-de-links.vercel.app/)
+
 ## Demonstração
 
 - Digite uma URL
