@@ -8,7 +8,10 @@ Aplicação web desenvolvida com **Node.js, Express, Pug, Sass e Bootstrap** par
 
 ## Demonstração
 
-- Digite uma URL - Encurte o link - Copie o link encurtado com um clique - Exiba links ordenados por número de acessos
+- Digite uma URL
+- Encurte o link
+- Copie o link encurtado com um clique
+- Exiba links ordenados por número de acessos
 
 ## Tecnologias
 
@@ -19,7 +22,9 @@ Aplicação web desenvolvida com **Node.js, Express, Pug, Sass e Bootstrap** par
 - Bootstrap 5
 - Bootstrap Icons
 - Axios
+- Dotenv
 - Nodemon
+- TinyURL API
 
 ## Funcionalidades
 
@@ -33,21 +38,49 @@ Aplicação web desenvolvida com **Node.js, Express, Pug, Sass e Bootstrap** par
 
 ## Instalação
 
-Clone o repositório: npm install
+Clone o repositório
+```bash
+  https://github.com/giosantos99/encurtador-de-links.git
+```
+
+Instale as dependências:
+npm install
+
+## Configuração das variáveis de ambiente
+
+Crie um arquivo .env na raiz do projeto, utilizando o .env.example como referência.
+
+```bash
+  cp .env.example .env
+```
+
+Configure as variáveis no arquivo .env:
+
+TINYURL_API_TOKEN=seu_token_aqui
+
+Para utilizar a API do TinyURL, é necessário criar uma conta e gerar um API Token na plataforma oficial.
+
+**Importante**: mantenha seu arquivo .env privado e nunca compartilhe seu token publicamente.
 
 ## Executando em desenvolvimento
 
-npm run dev
+```bash
+  npm run dev
+```
 
 A aplicação ficará disponível em: http://localhost:3000
 
 ## Gerando CSS para produção
 
-npm run build:css
+```bash
+  npm run build:css
+```
 
 ## Executando em produção
 
-npm start
+```bash
+  npm start
+```
 
 ## Scripts
 
@@ -57,6 +90,6 @@ npm start
 - npm run build:css — gera CSS minificado
 - npm start — inicia a aplicação em modo produção
 
-## Autor
+## Autora
 
 Giovanna Santos de Souza

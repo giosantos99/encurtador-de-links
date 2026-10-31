@@ -1,9 +1,9 @@
-import { viewsDir, publicDir } from './src/Utils/tools.js'
+import { viewsDir, publicDir } from './src/utils/tools.js'
 
-import EncurtadorController from './src/controllers/EncurtadorController.js'
-import UrlController from './src/controllers/UrlController.js'
+import EncurtadorController from './src/controllers/encurtador-controller.js'
+import UrlController from './src/controllers/url-controller.js'
 
-import path from 'path'
+import "dotenv/config"
 import express from 'express'
 
 const port = process.env.PORT ?? 3000

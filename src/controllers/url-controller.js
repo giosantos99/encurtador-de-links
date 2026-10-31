@@ -1,9 +1,7 @@
 import fs from 'fs/promises'
 import path from 'path'
 
-import { dataDir } from '../Utils/tools.js'
-import { json } from 'stream/consumers'
-
+import { dataDir } from '../utils/tools.js'
 export default class UrlController {
   static async fetchUrl (req, res) {
     const filePath = path.join(dataDir, 'urls.json')
